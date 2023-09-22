@@ -48,6 +48,11 @@ p{
     margin-bottom: 7%;
 }
 
+.avaliacao{
+    display: flex;
+    justify-content: center;
+}
+
 .radio{
     display: none;
 }
@@ -61,7 +66,7 @@ p{
     text-align: center;
     line-height: 47px;
     cursor: pointer;
-    margin-right: 10px;
+    margin-right: 20px;
     color: var(--MediumGrey);
     font-weight: bold;
     font-size: .9em;
@@ -87,7 +92,7 @@ p{
     border: none;
     border-radius: 20px;
     background-color: var(--laranja);
-    margin-top: 10%;
+    margin-top: 5%;
     height: 45px;
     padding: 4%;
     width: 100%;

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* Estilo para ocultar o botão de rádio padrão */
+.radio-button {
+  display: none;
+}
+
+/* Estilo para criar um visual de botão de rádio personalizado */
+.radio-label {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ccc;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+/* Estilo para quando o botão de rádio estiver marcado */
+.radio-button:checked + .radio-label {
+  background-color: #007bff;
+  color: #fff;
+}
+
+</style>
+</head>
+<body>
+
+<!-- Grupo de botões de rádio -->
+<label>
+  <input type="radio" class="radio-button" name="radio-group" value="1">
+  <span class="radio-label">1</span>
+</label>
+
+<label>
+  <input type="radio" class="radio-button" name="radio-group" value="2">
+  <span class="radio-label">2</span>
+</label>
+
+<label>
+  <input type="radio" class="radio-button" name="radio-group" value="3">
+  <span class="radio-label">3</span>
+</label>
+
+</body>
+</html>

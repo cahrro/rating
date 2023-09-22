@@ -1,0 +1,131 @@
+@import url(https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;500;600;800;900&display=swap);
+
+
+:root{
+    --font1:'Overpass', sans-serif;
+    --laranja: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --darkGrey: hsl(213, 10%, 21%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+}
+
+body {
+    background: var(--VeryDarkBlue) ;
+    font-family: var(--font1);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    background-color: var(--DarkBlue);
+    padding: 4%;
+    margin: 1%;
+    max-width: 375px;
+    border-radius: 15px;
+}
+
+.icone{
+    background-color: var(--darkGrey);
+    border-radius: 50%;
+    padding: 4%;
+}
+
+h1{
+    color: var(--White);
+    font-weight: 700;
+    margin-bottom: -5px;
+}
+
+p{
+    color: var(--LightGrey);
+    font-size: 15px;
+    padding: 1%;
+    margin-bottom: 7%;
+}
+
+.radio{
+    display: none;
+}
+
+.numradio{
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: var(--darkGrey);
+    text-align: center;
+    line-height: 47px;
+    cursor: pointer;
+    margin-right: 10px;
+    color: var(--MediumGrey);
+    font-weight: bold;
+    font-size: .9em;
+
+}
+
+.radio:checked + .numradio {
+    background-color: var(--LightGrey);
+    color: white;
+}
+
+.radio:hover + .numradio{
+    color: white;
+    background-color: var(--laranja);
+}
+
+.btn{
+    font-family: var(--font1);
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: .9em;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--laranja);
+    margin-top: 10%;
+    height: 45px;
+    padding: 4%;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.btn:hover{
+    transition: .2s;
+    background-color: white;
+    color: var(--laranja);
+    font-weight: bold;
+}
+
+.imagem{
+    display: flex;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+
+}
+
+.agradecimento{
+    text-align: center;
+}
+
+.mainAgra{
+    display: relative;
+}
+
+.nota{
+    display: none;
+    width: 60%;
+    margin-top: 5%;
+    margin-left: 19%;
+    color: var(--laranja);
+    background-color: var(--darkGrey);
+    padding: 2%;
+    border-radius: 15px;
+    text-align: center;
+}

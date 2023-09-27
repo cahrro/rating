@@ -124,7 +124,7 @@ p{
 }
 
 .nota{
-    display: none;
+ /*    display: none; */
     width: 60%;
     margin-top: 5%;
     margin-left: 19%;
